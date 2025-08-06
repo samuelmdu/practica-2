@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <%-include('header.ejs') %>
+
+        <main class="main-container">
+            <section class="log-in-container">
+                <img src="img/capsule_corp.png" alt="logo" class="logo">
+
+                <div class="welcome-container">
+                    <h1>Welcome back!</h1>
+                    <p>Please enter your details to get started</p>
+                </div>
+                <form action="/login" method="POST" class="form-container">
+                    <div class="field-container">
+                        <label for="inp-field" class="inp-label">username: Admin</label>
+                        <input type="text" class="inp-field" id="inp-user" placeholder="Enter your username"
+                            name="username">
+                    </div>
+                    <div class="field-container">
+                        <label for="inp-field" class="inp-label">password: 123</label>
+                        <input type="password" class="inp-field" id="inp-paassword" placeholder="•••••••••"
+                            name="password">
+                    </div>
+                    <input type="submit" class="log-in-btn" value="Log in"></input>
+                </form>
+
+            </section>
+        </main>
+</body>
+
+</html>

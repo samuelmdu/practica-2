@@ -1,0 +1,15 @@
+<header>
+    <nav class="nav-container">
+        <img src="./img/capsule_corp.png" alt="logo" class="logo">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <% if (loggedIn) { %>
+
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/logout">Log out</a></li>
+                <% } else { %>
+                    <li><a href="/login">Log in</a></li>
+                    <% } %>
+        </ul>
+    </nav>
+</header>
