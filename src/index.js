@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 });
 
 app.listen(port, () => {
-    console.log('El server se conectó');
+    console.log(`Escuchando en el puerto ${port}`);
 })
 
 app.get('/', (req, res) => {
