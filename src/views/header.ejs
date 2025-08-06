@@ -6,6 +6,9 @@
             <% if (loggedIn) { %>
 
                 <li><a href="/dashboard">Dashboard</a></li>
+                <li>
+                    <%- username %>
+                </li>
                 <li><a href="/logout">Log out</a></li>
                 <% } else { %>
                     <li><a href="/login">Log in</a></li>
